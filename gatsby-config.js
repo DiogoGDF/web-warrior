@@ -8,5 +8,11 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  plugins: [],
-}
+    /* Your site config here */
+    plugins: [],
+    siteMetadata: {
+      title: 'Web Warrior',
+      description: 'web dev portfolio',
+      copyright: 'This website is copyright 2023 Web Warrior'
+    },
+  }
