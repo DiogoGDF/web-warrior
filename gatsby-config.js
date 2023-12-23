@@ -5,24 +5,25 @@
  */
 
 /**
- * @type {import('gatsby').GatsbyConfig}
+ * @type {import("gatsby").GatsbyConfig}
  */
 module.exports = {
     /* Your site config here */
     plugins: [
-        `gatsby-transformer-remark`,
+        "gatsby-plugin-pnpm",
+        "gatsby-transformer-remark",
         {
-            resolve: `gatsby-source-filesystem`,
+            resolve: "gatsby-source-filesystem",
             options: {
-                name: `projects`,
-                path: `${__dirname}/src/projects/`
+                name: "projects",
+                path: "src/projects/"
             }
         }
     ],
     siteMetadata: {
-        title: 'Web Warrior',
-        description: 'web dev portfolio',
-        copyright: 'This website is copyright 2023 Web Warrior',
-        contact: 'me@thewebwarriorbr.com'
+        title: "Web Warrior",
+        description: "web dev portfolio",
+        copyright: "This website is copyright 2023 Web Warrior",
+        contact: "diogogarbinato@gmail.com"
     }
 }
